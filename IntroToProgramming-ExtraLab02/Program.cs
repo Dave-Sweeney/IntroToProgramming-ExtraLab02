@@ -10,7 +10,9 @@ namespace IntroToProgramming_ExtraLab02
     {
         static void Main(string[] args)
         {
-            // DisplayMainPortal();
+       
+            ConsoleProcessor.DisplayMainPortal();
+            ConsoleProcessor.ProcessMainPortalInput();
 
             Student student = new Student();
             student.GetStudentInformation();
@@ -26,16 +28,6 @@ namespace IntroToProgramming_ExtraLab02
 
 
             Console.ReadKey();
-        }
-
-        public static void DisplayMainPortal()
-        {
-            Console.WriteLine("1. Student Portal");
-            Console.WriteLine("2. Instructor Portal");
-            Console.WriteLine("3. Course Portal");
-            Console.WriteLine("4. Program Portal");
-            Console.WriteLine();
-
         }
 
     }
