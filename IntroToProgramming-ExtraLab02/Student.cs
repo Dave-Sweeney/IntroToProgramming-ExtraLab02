@@ -25,8 +25,6 @@ namespace IntroToProgramming_ExtraLab02
         public override void GetInfo()
         {
             base.GetInfo();
-
-            
         }
 
         public void GetStudentInformation()
@@ -39,7 +37,14 @@ namespace IntroToProgramming_ExtraLab02
 
         public void PrintStudentDetails()
         {
-            Console.WriteLine($"{ Name } , { StudentId } was born on:  { Birthday }");
+            Console.WriteLine($"Student ID: { StudentId }\n{ Name } was born on:  { Birthday }");
+            if (Age < 18)
+            {
+                Console.WriteLine("**********************************************");
+                Console.WriteLine("THIS STUDENT IS NOT OLD ENOUGH TO BE ENROLLED!");
+                Console.WriteLine("**********************************************");
+                Console.WriteLine();
+            }
         }
 
     }

@@ -60,7 +60,7 @@ namespace IntroToProgramming_ExtraLab02
                     Console.WriteLine("Enter the person's birthday");
                     this.Birthday = DateTime.Parse(Console.ReadLine());
                     invalidBirthday = false;
-                } catch(Exception ex)
+                } catch(Exception)
                 {
                     Console.WriteLine("Please enter a valid date");
                 }
